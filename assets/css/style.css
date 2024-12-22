@@ -1,0 +1,258 @@
+/* General body styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #f9f9f9; /* Warna abu-abu terang untuk background utama */
+    color: #333333; /* Warna teks abu-abu tua */
+    font-family: 'Poppins', sans-serif; /* Font utama */
+
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #f8c8dc; /* Pink halus */
+    border-bottom: 2px solid #e1a5bd; /* Garis bawah pink lebih tua */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #515151 !important; /* Warna putih untuk teks navbar */
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #f8c8dc !important; /* Efek hover pink lembut */
+    background-color: #333333;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff; /* Warna putih untuk kontainer utama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow lembut */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #f8c8dc; /* Pink halus */
+    border-color: #f8c8dc;
+    color: #ffffff; /* Warna teks putih */
+}
+
+.btn-primary:hover {
+    background-color: #e1a5bd; /* Pink sedikit lebih gelap */
+    border-color: #e1a5bd;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #ff6b6b; /* Merah pastel */
+    border-color: #ff6b6b;
+}
+
+.btn-danger:hover {
+    background-color: #e74c3c; /* Merah lebih tua */
+    border-color: #e74c3c;
+}
+
+.btn-info {
+    background-color: #a4c8e1; /* Biru lembut */
+    border-color: #a4c8e1;
+}
+
+.btn-info:hover {
+    background-color: #7bb0d1; /* Biru tua */
+    border-color: #7bb0d1;
+}
+
+.btn-warning {
+    background-color: #f7d794; /* Kuning pastel */
+    border-color: #f7d794;
+    color: #333333;
+}
+
+.btn-warning:hover {
+    background-color: #f5c469; /* Kuning lebih tua */
+    border-color: #f5c469;
+}
+
+/* Form styling */
+form label {
+    font-weight: bold;
+    color: #555555; /* Warna abu-abu gelap */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="file"],
+textarea {
+    border: 1px solid #e1e1e1; /* Warna abu-abu garis input */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #f8c8dc; /* Garis fokus warna pink */
+    box-shadow: 0 0 5px #f8c8dc;
+    transition: 0.2s ease-in-out;
+}
+
+/* Table styling */
+table {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #f8c8dc;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f8f1f4; /* Warna pink halus hover */
+    transition: 0.2s ease-in-out;
+}
+
+/* Card styling (untuk detail) */
+.card {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8c8dc;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.card-body img {
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Logout button */
+.logout {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.logout:hover {
+    background-color: #e74c3c;
+    transition: 0.3s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #f8c8dc;
+    color: #ffffff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Kontainer pencarian */
+.search-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Form input */
+.search-container .form-control {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #ffccd5; /* Pink lembut */
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-container .form-control:focus {
+    border-color: #ff99b3; /* Fokus dengan warna lebih gelap */
+    box-shadow: 0 0 5px rgba(255, 153, 179, 0.5);
+}
+
+/* Tombol pencarian */
+.search-container .btn-secondary {
+    background-color: #ff99b3; /* Warna tombol pink lembut */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-container .btn-secondary:hover {
+    background-color: #ff6f91; /* Hover dengan pink lebih gelap */
+    box-shadow: 0 4px 8px rgba(255, 111, 145, 0.3);
+}
+
+/* Margins dan layout */
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+
+nav .pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+nav .pagination .page-item {
+    margin: 0 5px;
+}
+
+nav .pagination .page-link {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ff6fa5; /* Warna pink lembut */
+    background-color: #fff0f5; /* Warna putih dengan sentuhan pink */
+    border: 1px solid #ffb3d9; /* Warna pink lebih gelap untuk border */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #ffcce5; /* Warna pink lembut saat hover */
+    color: #ffffff; /* Warna putih untuk teks */
+    border-color: #ff80b3;
+}
+
+.pagination .active .page-link {
+    background-color: #ff80b3; /* Warna pink lebih pekat */
+    color: #ffffff; /* Warna putih untuk teks */
+    border-color: #ff4d94;
+}
